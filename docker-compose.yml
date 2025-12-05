@@ -99,14 +99,14 @@ services:
     networks:
       - devops-net
 
-#  petclinic:
-#    image: spring-projects/spring-petclinic.git
-#    container_name: petclinic
-#    ports:
-#      - "8081:8080"
-#    networks:
-#      - devops-net
-
+ petclinic:
+    image: springcommunity/spring-petclinic-rest
+    container_name: petclinic
+    ports:
+      - "8081:8080"
+    networks:
+      - devops-net
+      
   maven-java25:
     build:
       context: .
